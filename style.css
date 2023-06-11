@@ -1,0 +1,17 @@
+html {
+    background:#B6FFCE;
+    background-size:cover;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+ 

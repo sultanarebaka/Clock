@@ -22,7 +22,10 @@ html {
     margin:auto;
     position: relative;
     padding:7rem;
-    box-shadow:0 0 0 4px rgba(0,0,0,0.1);
+    box-shadow:0 0 0 4px rgba(0,0,0,0.1),
+  
+    0 0 10px rgba(0,0,0,0.2)
+    ;
   }
 
   .clock-face {
@@ -31,5 +34,18 @@ html {
     height: 100%;
     transform: translateY(-3px);
   }
+
+
+  .hand {
+    width:50%;
+    height:6px;
+    background:black;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function:cubic-bezier(0.0075, 0.02, 0.05, 1);
+  }
+
 
  

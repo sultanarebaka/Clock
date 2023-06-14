@@ -1,7 +1,9 @@
-* {
+
+*, *::after, *::before {
 	box-sizing: border-box;
-	font-family: 'Times New Roman', sans-serif;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
 body {
 	background:#C6FFC1;
 	display: flex;
@@ -42,28 +44,33 @@ body {
 	transform: rotate;
 	font-size: 1.5rem;
 }
-.clock .number1{--rotation: 30deg};
-.clock .number2{--rotation: 60deg};
-.clock .number3{--rotation: 90deg};
-.clock .number4{--rotation: 120deg};
-.clock .number5{--rotation: 150deg};
+
+.clock .number1{--rotation: 30deg}
+.clock .number2{--rotation: 60deg}
+.clock .number3{--rotation: 90deg}
+.clock .number4{--rotation: 120deg}
+.clock .number5{--rotation: 150deg}
 .clock .number6{--rotation: 0deg; transform: translateY(90%); }
-.clock .number7{--rotation: 210deg};
-.clock .number8{--rotation: 240deg};
-.clock .number9{--rotation: 270deg};
-.clock .number10{--rotation: 300deg};
-.clock .number11{--rotation: 330deg};
+.clock .number7{--rotation: 210deg}
+.clock .number8{--rotation: 240deg}
+.clock .number9{--rotation: 270deg}
+.clock .number10{--rotation: 300deg}
+.clock .number11{--rotation: 330deg}
 
 
 .clock .hand{
+    --rotation: 0;
+    transform-origin: bottom;
+	z-index: 10;
+    
 	position: absolute;
 	bottom: 50%;
 	left: 50%;
 	border: 1px solid white;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	transform-origin: bottom;
-	z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg))
+	
 	
 }
 

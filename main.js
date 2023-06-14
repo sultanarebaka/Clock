@@ -9,3 +9,6 @@ function setClock() {
     const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
     const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
 }  
+function Clock() {
+
+}

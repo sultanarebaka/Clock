@@ -10,5 +10,8 @@ function setClock() {
     const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
 }  
 function Clock() {
-
+    setRotation(secondHand, secondsRatio)
+    setRotation(minuteHand, minutesRatio)
+    setRotation(hourHand, hoursRatio)
+  
 }

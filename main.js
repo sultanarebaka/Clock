@@ -15,3 +15,6 @@ function Clock() {
     setRotation(hourHand, hoursRatio)
   
 }
+function setRotation(element, rotationRatio) {
+}
+			

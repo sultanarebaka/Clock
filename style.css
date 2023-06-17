@@ -23,7 +23,9 @@ body {
 	box-shadow:0 0 0 4px rgba(0,0,0,0.4);
 }
 .clock::after{
-	position: absolute;
+
+ content: '';	
+position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate;
@@ -32,7 +34,7 @@ body {
 	background-color: black;
 	z-index: 10;
 	border-radius: 50%;
-	content: '';
+	
 }
 
 .clock .number{

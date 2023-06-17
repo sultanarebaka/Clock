@@ -44,8 +44,7 @@ position: absolute;
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	transform: rotate;
-	font-size: 1.5rem;
+transform: rotate(var(--rotation));	font-size: 1.5rem;
 }
 
 .clock .number1{--rotation: 30deg}
